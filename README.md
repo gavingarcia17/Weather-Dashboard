@@ -1,38 +1,82 @@
-# Weather-Dashboard
+# Weather Dashboard
 
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [License](#license)
+- [Contributing](#contributing)
+- [Questions](#questions)
 
-Weather Board is a simple web application that allows users to get the current weather information for a specified city. The application fetches weather data from a weather API and displays it to the user.
+## Description
+The Weather Dashboard is a web application that allows users to search for current weather conditions in any city. The application fetches weather data from a weather API and displays it in a user-friendly format. This project demonstrates the use of server-side APIs, asynchronous JavaScript, and environment variables for secure API key management.
 
 ## Features
-
-- Search for the current weather by city name.
-- Display the temperature and weather description.
-- Save the last searched city to local storage.
-- Automatically fetch and display the weather for the last searched city when the page loads.
+- Search for current weather conditions by city name.
+- Display temperature, weather description, humidity, and wind speed.
+- Responsive design for optimal viewing on different devices.
 
 ## Installation
+To set up the Weather Dashboard locally, follow these steps:
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/weather-board.git
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/your-username/weather-dashboard.git
+    cd weather-dashboard
     ```
-2. Navigate to the project directory:
-    ```bash
-    cd weather-board
+
+2. **Install dependencies:**
+    ```sh
+    npm install
     ```
-3. Open the `index.html` file in your web browser.
+
+3. **Create a `.env` file in the root directory and add your API key:**
+    ```properties
+    API_KEY=your_api_key_here
+    ```
+
+4. **Start the server:**
+    ```sh
+    node server.js
+    ```
+
+5. **Open your browser and navigate to:**
+    ```
+    http://localhost:3000
+    ```
 
 ## Usage
+1. Open the Weather Dashboard in your browser.
+2. Enter the name of a city in the input field.
+3. Click the "Get Weather" button.
+4. View the current weather conditions displayed on the page.
 
-1. Enter the name of a city in the input field.
-2. Click the "Get Weather" button.
-3. The current weather information for the specified city will be displayed.
-4. The last searched city will be saved and automatically loaded the next time you open the application.
-
-## API
-
-The application uses the OpenWeatherMap API to fetch weather data. You will need an API key to use the service. Replace the `apiKey` variable in `public/script.js` with your own API key.
+## Technologies Used
+- **Node.js**: JavaScript runtime environment.
+- **Express**: Web framework for Node.js.
+- **dotenv**: Module to load environment variables from a `.env` file.
+- **node-fetch**: Module to make HTTP requests.
+- **HTML5**: Markup language for creating web pages.
+- **CSS3**: Style sheet language for designing web pages.
+- **JavaScript**: Programming language for web development.
 
 ## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-This project is licensed under the MIT License.
+## Contributing
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+## Questions
+If you have any questions or need further assistance, please feel free to contact me:
+
+- **GitHub**: [your-username](https://github.com/your-username)
+- **Email**: your-email@example.com
